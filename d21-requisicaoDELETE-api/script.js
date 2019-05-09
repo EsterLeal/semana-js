@@ -30,25 +30,19 @@ fetch('https://reqres.in/api/users')
         card. appendChild(botao);
 
         botao.addEventListener("click", () => {
-         const thisCard = botao.parentElement;
-         const cardPai = thisCard.parentElement;
-       
-        fetch('https://reqres.in/api/users' , {
-         method: 'DELETE',
-         headers:{
-            'Accepts':'applications/json',
-            'Content-Type':'applications/json'
-        },        
-        body: JSON.stringify ({
-            'id': botao.getAttribute("data-id")
-         })
+            console.log("EAE");
         })
-        .then(()=>{
-            cardPai.removeChild(thisCard)
-         })
-        .catch((erro) => {
-        console.log(erro);
-        })
+
+        // const avatar = document.createElement('img');
+        // avatar.setAttribute ("src", pessoas.avatar);
+        // authors.appendChild(avatar);
+                
     })
 })
+.catch((erro) => {
+    console.log(erro);
+})
+
+
+
 
