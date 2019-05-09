@@ -25,8 +25,8 @@ fetch('https://reqres.in/api/users')
         card.appendChild(email);
 
         const botao = document.createElement("button");
-        botao.setAttribute('id', pessoas.id);
         botao.innerHTML = "✖";
+        botao.setAttribute('data-id', pessoas.id);
         card. appendChild(botao);
 
         // const avatar = document.createElement('img');
