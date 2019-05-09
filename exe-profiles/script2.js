@@ -10,6 +10,7 @@ fetch('https://randomuser.me/api/?results=10')
 .then(function(data){
     console.log("SUCESSO!!")
     console.log(data)
+    
     data.results.forEach(pessoas => {
         const card=document.createElement('div');
         card.setAttribute('class', 'card');
